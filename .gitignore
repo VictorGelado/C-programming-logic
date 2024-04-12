@@ -1,13 +1,14 @@
 # Arquivos de compilação
-*.o
-*.out
+**/*.o
+**/*.out
 
 # Arquivos executáveis
-*.exe
-*.out
+**/*.exe
+**/*.out
+**/atividade_*
 
 # Arquivos de dependência
-*.d
+**/*.d
 
 # Pasta de configuração do Visual Studio Code
-.vscode/
+**/.vscode/
