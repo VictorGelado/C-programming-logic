@@ -1,0 +1,13 @@
+# Arquivos de compilação
+*.o
+*.out
+
+# Arquivos executáveis
+*.exe
+*.out
+
+# Arquivos de dependência
+*.d
+
+# Pasta de configuração do Visual Studio Code
+.vscode/
