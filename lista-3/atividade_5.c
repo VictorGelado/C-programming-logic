@@ -3,21 +3,20 @@
 
 int main() {
 
-    int x, y, c;
+    int a1, r, n, c;
+    int s = 0;
 
-    scanf("%d %d", &x, &y);
-    
-    if (x % 2 != 0) printf("O PRIMEIRO NUMERO NAO E PAR");
-    else {
-        int numTemp = x;
+    scanf("%d %d %d", &a1, &r, &n);
 
-        for (c = 0; c < y; c++) {
-            printf("%d ", numTemp);
-            numTemp += 2;
-        }
+    for (c = 1; c <= n; c++) {
+        int numero = a1 + ((c - 1) * r);
 
-        printf("\n");
+        s += numero;
     }
+
+    printf("%d\n", s);
+    
+    
 
 
     return 0;

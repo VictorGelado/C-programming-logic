@@ -12,6 +12,9 @@
 # Pasta de configuração do Visual Studio Code
 .vscode/
 
+output
+build
+
 # Ignorar arquivos com nomes "atividade_N"
 **/atividade_*
 !**/atividade_*.c
