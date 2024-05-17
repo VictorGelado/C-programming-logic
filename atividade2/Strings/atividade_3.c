@@ -8,27 +8,30 @@ const char consoantes[21] = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', '
 
 int main() {
     
-    int n, c, j, k, tam, x = 0, y = 0, z = 0;
-    char msg[10000];
+    int n, c, j, k, tam;
+    
 
     scanf("%d", &n);
 
     for (k = 1; k <= n; k++) {
-        scanf("%s", msg);
-        printf("\nk = %d\n", k);
+        int x = 0, y = 0, z = 0;
+        char msg[1000] = {'\0'};
+
+        scanf(" %[^\n]", msg);
+
 
         tam = strlen(msg);
 
         for (c = 0; c < tam; c++) {
             for (j = 0; j <= 4; j++) {
-                if (vogais[j] == msg[c]) {
+                if (vogais[j] == tolower(msg[c])) {
                     x++;
                     y++;
                 }
             }
 
             for (j = 0; j <= 20; j++) {
-                if (consoantes[j] == msg[c]) {
+                if (consoantes[j] == tolower(msg[c])) {
                     z++;
                     x++;
                 }
