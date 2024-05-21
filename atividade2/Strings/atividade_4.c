@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 
-#define ONE "two"
+#define ONE "one"
 #define TWO "two"
 #define THREE "three"
 
@@ -20,7 +20,7 @@ int main() {
         int qtdErroOne = 0;
         int qtdErroTwo = 0;
 
-        if (tamDig > 3) printf("3");
+        if (tamDig > 3) printf("3\n");
         else {
             for (j = 0; j < tamDig; j++) {
                 if (ONE[j] != string[j]) qtdErroOne++; 
@@ -28,8 +28,8 @@ int main() {
             }
 
             if (qtdErroOne == 1) {
-                printf("1");
-            } else printf("2");
+                printf("1\n");
+            } else printf("2\n");
         } 
     }
     
