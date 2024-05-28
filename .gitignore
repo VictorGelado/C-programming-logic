@@ -13,6 +13,7 @@
 .vscode/
 
 output
+**/output/
 build
 
 # Ignorar arquivos com nomes "atividade_N"
