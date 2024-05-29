@@ -14,9 +14,6 @@ int main() {
     
     while (n--) {
         scanf("%d %d", &x, &y);
-        // do {
-        //     scanf("%d %d", &x, &y);
-        // } while (!(x >= 1 && x <= 12221) && !(y >= 1 && y <= 12221));
 
         char s[100000] = "";
             
