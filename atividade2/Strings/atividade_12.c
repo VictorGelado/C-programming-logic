@@ -30,13 +30,8 @@ int main() {
         int qtd = 0;
         char ant = '\0';
 
-        for (c = 1; c < strlen(pLetras); c += 2) {
-            if (c > idx) {
-                if (pLetras[c-1] == pLetras[c-1] && ant != pLetras[c - 2]) qtd++;
-            }
-            else if (pLetras[c] == pLetras[c-1] && ant != pLetras[c - 2]) qtd++;
-
-
+        for (c = 0; c < idx; c++) {
+            if (pLetras[c] == pLetras[c+1] && pLetras[c] != pLetras[c-1]) qtd++;
         }
 
         

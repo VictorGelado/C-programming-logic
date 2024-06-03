@@ -20,10 +20,9 @@ int main() {
 
 
     // Mude isso
-    for (c = 1; c < n; c++) {
-        int idx = c - 1;
+    for (c = 3; c < n*3; c+=3) {
 
-        int d = sqrt(pow((pontos[idx] - pontos[idx + 3]), 2) + pow((pontos[idx + 1] - pontos[idx + 4]), 2) + pow((pontos[idx + 2] - pontos[idx + 5]), 2));
+        double d = sqrt(pow((pontos[c-3] - pontos[c]), 2) + pow((pontos[c - 3 + 1] - pontos[c + 1]), 2) + pow((pontos[c - 3 + 2 ] - pontos[c + 2]), 2)); 
 
         printf("%.2lf\n", d);
     }
